@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "h h h h"
+        "a a a n"
+        "f f f f";
+}
+
+header{
+    background: url(design/beer-new_401732638.jpg) ;
+    height: 600px;
+    grid-area: h;
+    text-align: left;
+    background-size: cover;
+
+}
+
+div{
+    display: grid;
+}
+
+img{
+    border: solid 5px;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    display: grid;
+    color: red;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: silver;
+    padding: 10px;
+
+    
+}
+
+li{
+    list-style-type: none;
+    
+}
+
+#hhh{
+    display: grid;
+    grid-template-columns: 100px 200px;
+    
+}
+
+#hhh label{
+    text-align: right;
+}
+
+legend {
+    padding: 10px;
+  }
+
+  article{
+    grid-area: a;
+    background-color: black;
+  }
+
+nav{
+    grid-area: n;
+    background-color: grey;
+}
+
+input {
+    margin: 5px;
+  }
+
+  table{
+    
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
+
+  tr:nth-child(even) {
+    background-color:grey;
+  }
+
+footer{
+    background-color: silver;
+    grid-area: f;
+    padding: 20px;
+    text-align: center;
+}
+
+#sorok{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+}
+
+#sorok img{
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "h"
+            "n"
+            "a"
+            "f";
+    }
+    #sorok{
+        grid-template-columns: 1fr 1fr;
+        
+    
+    }
+
+}
